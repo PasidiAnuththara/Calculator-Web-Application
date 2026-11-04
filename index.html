@@ -7,33 +7,43 @@
 
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <div>
         <h2 class="txt">Calculator</h2>
-        <input class="display" id="Calculation" type="text" placeholder="Calculation">
+        <input class="display" id="lblNumbers" type="text" placeholder="Calculation">
         <input class="display" id="results" type="text" placeholder="results">
         <input class="display" id="History" type="text" placeholder="History">
 
         <div class="buttons">
-            <input class="function" type="button" value="7" onclick="clickFunctions()">
-            <input class="function" type="button" value="8" onclick="clickFunctions()">
-            <input class="function" type="button" value="9" onclick="clickFunctions()">
-            <input class="function" type="button" value="÷ " onclick="clickFunctions()">
-            <input class="function" type="button" value="4" onclick="clickFunctions()">
-            <input class="function" type="button" value="5" onclick="clickFunctions()">
-            <input class="function" type="button" value="6" onclick="clickFunctions()">
-            <input class="function" type="button" value="*" onclick="clickFunctions()">
-            <input class="function" type="button" value="1" onclick="clickFunctions()">
-            <input class="function" type="button" value="2" onclick="clickFunctions()">
-            <input class="function" type="button" value="3" onclick="clickFunctions()">
-            <input class="function" type="button" value="-" onclick="clickFunctions()">
-            <input class="function" type="button" value="0" onclick="clickFunctions()">
-            <input class="function" type="button" value="." onclick="clickFunctions()">
-            <input class="function" type="button" value="=" onclick="clickFunctions()">
-            <input class="function" type="button" value="+" onclick="clickFunctions()">
+            <input class="function clear" type="button" value="C" onclick="clickBtnC()">
+            <input class="function clear" type="button" value="CE" onclick="clickBtnCE()">
+            <input class="function" type="button" value="%" onclick="clickBtnpRECENTAGE()">
+            <input class="function" type="button" value="÷" onclick="clickBtnDivide()">
+
+            <input class="function" type="button" value="7" onclick="clickBtn7()">
+            <input class="function" type="button" value="8" onclick="clickBtn8()">
+            <input class="function" type="button" value="9" onclick="clickBtn9()">
+            <input class="function" type="button" value="*" onclick="clickBtnMultyply()">
+
+            <input class="function" type="button" value="4" onclick="clickBtn4()">
+            <input class="function" type="button" value="5" onclick="clickBtn5()">
+            <input class="function" type="button" value="6" onclick="clickBtn6()">
+            <input class="function" type="button" value="-" onclick="clickBtn()">
+
+            <input class="function" type="button" value="1" onclick="clickBtn1()">
+            <input class="function" type="button" value="2" onclick="clickBtn2()">
+            <input class="function" type="button" value="3" onclick="clickBtn3()">
+            <input class="function" type="button" value="+" onclick="clickBtnSAdd()">
+
+            <input class="function zero" type="button" value="0" onclick="clickBtn0()">
+            <input class="function" type="button" value="." onclick="clickBtnDot()">
+            <input class="function equal" type="button" value="=" onclick="clickBtnEquals()">
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
+
 </html>
