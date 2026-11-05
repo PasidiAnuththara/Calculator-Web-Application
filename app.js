@@ -85,6 +85,14 @@ function loadData() {
         document.getElementById("calculatorHistory").innerHTML +=  data + "\n" ;
     }
 }
+
+// function clickBtnHI(){
+//     if(lastResult !== ''){\
+//         currentInput.lastResult;
+//         resultDisplay.innerText=currentInput;
+//         historyDisplay.innerText = "Ans = " + lastResult;
+//     }
+// }
      
 
 
