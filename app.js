@@ -1,49 +1,92 @@
-function clickBtn7() {
+function clickBtn(buttons) {
     let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "7";
+    number += buttons.value;
+    document.getElementById("lblNumbers").value=number;
 }
 
-function clickBtn8() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "8";
+
+
+function clickOperation(buttons) {
+    let txtValue = document.getElementById("lblNumbers").value;
+
+    if(buttons.value == "+"){
+        txtValue += "+";
+    }else if(buttons.value == "-"){
+        txtValue += "-";
+
+    }else if(buttons.value == "÷"){
+        txtValue=txtValue + "/";
+
+    }else if(buttons.value == "*"){
+        txtValue=txtValue + "*";
+    }
+
+    document.getElementById("lblNumbers").value=txtValue;
 }
 
-function clickBtn9() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "9";
+function  clickBtnC(buttons){
+    if(buttons.value == "C"){
+        document.getElementById("lblNumbers").value="";
+        document.getElementById("results").value="";
+    }   
 }
 
-function clickBtn4() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "4";
+
+function clickCalculationProcess(){
+    let txtValue = document.getElementById("lblNumbers").value;
+
+    let operator = "" ;
+
+    if (txtValue.includes("+")) {
+        operator = "+";
+
+    } else if (txtValue.includes("-")) {
+        operator = "-";
+
+    } else if (txtValue.includes("*")) {
+        operator = "*";
+
+    } else if (txtValue.includes("/")) {
+        operator = "/";
+    }
+
+    let numbers = txtValue.split(operator);
+
+    let num1 = Number(numbers[0]);
+    let num2 = Number(numbers[1]);
+
+    let result = 0;
+
+    if (operator == "+") {
+        result = num1 + num2;
+    } else if (operator == "-") {
+        result = num1 - num2;
+    } else if (operator == "*") {
+        result = num1 * num2;
+    } else if (operator == "/") {
+        result = num1 / num2;
+    }
+
+    document.getElementById("results").value = result;
+
+    let history = txtValue + " = " + result;
+
+    calculatorHistory.push(history);
+
+
+}
+function clikFunctionshistory(){
+    loadData();
+}
+function loadData() {
+
+    document.getElementById("calculatorHistory").innerHTML = "";
+    for (let data of calculatorHistory) {
+        document.getElementById("calculatorHistory").innerHTML +=  data + "\n" ;
+    }
+}
+     
 }
 
-function clickBtn5() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "5";
-}
 
-function clickBtn6() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "6";
-}
 
-function clickBtn1() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "1";
-}
-
-function clickBtn2() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "2";
-}
-
-function clickBtn3() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "3";
-}
-
-function clickBtn0() {
-    let number = document.getElementById("lblNumbers").value;
-    document.getElementById("lblNumbers").value = number + "0";
-}
