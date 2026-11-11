@@ -10,15 +10,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: black;
 }
 
 .container{
     width: 340px;
-    background-color: cadetblue;
+    background-color: rgb(160, 95, 131);
     border-radius: 10px;
     padding: 20px;
     border-radius: 16px;
+}
+
+.txt{
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .display{
@@ -31,18 +36,16 @@ body{
     text-align: right;
     width: 100%;
     height: 45px;
-
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    width: 100px;
+    width: 100%;
 }
 
 .function {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     height: 48px;
