@@ -5,6 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+
 
 .container{
     width: 320px;
@@ -50,11 +59,3 @@
     text-align: right;
 }
 
-body{
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: cadetblue;
-}
