@@ -5,7 +5,6 @@ function clickBtn(buttons) {
 }
 
 
-
 function clickOperation(buttons) {
     let txtValue = document.getElementById("lblNumbers").value;
 
