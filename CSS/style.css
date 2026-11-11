@@ -37,9 +37,20 @@ body{
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-    max-width: 320px;
-    margin: 0 auto;
+    gap: 10px;
+    width: 100px;
+}
+
+.function {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: aquamarine;
 }
 
 .clear {
@@ -55,12 +66,6 @@ body{
 .zero {
     grid-column: span 2;
     color: cadetblue;
-}
-
-.function {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
 }
 
 .display{
